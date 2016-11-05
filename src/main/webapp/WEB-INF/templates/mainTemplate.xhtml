@@ -1,0 +1,533 @@
+<!DOCTYPE html [
+    <!ENTITY nbsp "&#160;">
+    <!ENTITY bull "&#8226;">
+    <!ENTITY copy "&#169;">
+]>
+<html xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:ui="http://java.sun.com/jsf/facelets"
+        xmlns:c="http://java.sun.com/jsp/jstl/core"
+        xmlns:p="http://primefaces.org/ui" lang="#{language.locale}">
+        
+   <h:head locale="#{language.locale}">
+    <f:facet name="first">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+      	<!-- Favicon -->
+    	<link rel="shortcut icon" href="resources/assets/img/favicon.ico" type="image/x-icon" />
+    	
+	   	<!-- Font awesome -->
+	    <link href="resources/assets/css/font-awesome.css" rel="stylesheet" />
+	    <!-- Bootstrap -->
+	    <link href="resources/assets/css/bootstrap.css" rel="stylesheet" />   
+	    <!-- Slick slider -->
+	    <link rel="stylesheet" type="text/css" href="resources/assets/css/slick.css" />          
+	    <!-- Theme color -->
+	    <link id="switcher" href="resources/assets/css/theme-color/default-theme.css" rel="stylesheet" />          
+	
+	    <!-- Main style sheet -->
+	    <link href="resources/assets/css/style.css" rel="stylesheet" /> 
+	    
+	    <!-- Google Fonts -->
+	    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css' />
+	    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,500,700' rel='stylesheet' type='text/css' />
+	    
+	
+	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+       
+    </f:facet>
+    <title>
+    	<ui:insert name="title" />
+    </title>
+ 
+	<ui:insert name="head" />
+</h:head>
+
+<h:body locale="#{language.locale}">
+
+  <!--START SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#">
+      <i class="fa fa-angle-up"></i>      
+    </a>
+  <!-- END SCROLL TOP BUTTON -->
+
+  <!-- Start header  -->
+  <header id="mu-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="mu-header-area">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="mu-header-top-left">
+                  <div class="mu-top-email">
+                    <i class="fa fa-envelope"></i>
+                    <span>info@markups.io</span>
+                  </div>
+                  <div class="mu-top-phone">
+                    <i class="fa fa-phone"></i>
+                    <span>(568) 986 652</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="mu-header-top-right">
+                  <nav>
+                    <ul class="mu-top-social-nav">
+                      <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                      <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                      <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                      <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                      <li><a href="#"><span class="fa fa-youtube"></span></a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End header  -->
+  <!-- Start menu -->
+  <section id="mu-menu">
+    <nav class="navbar navbar-default" role="navigation">  
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->              
+          <!-- TEXT BASED LOGO -->
+         <!--  <a class="navbar-brand" href="index.html"><span>Varsity</span></a> -->
+          <!-- IMG BASED LOGO  -->
+         <a class="navbar-brand" href="index.html"><img src="resources/assets/img/IMG-20161103-WA0002.jpg" alt="logo" class="logo"/>PETRO VARSITY</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+            <li class="active"><a href="index.html">Home</a></li>            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Course <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="course.html">MBA - Oil&amp;Gas Project Management</a></li>                
+                <li><a href="course.html">MBA - Oil&amp;Gas Commissioning Management</a></li> 
+                <li><a href="course.html">MBA - Oil&amp;Gas Operations Management</a></li>                 
+              </ul>
+            </li>           
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="blog-archive.html">Blog Archive</a></li>                
+                <li><a href="blog-single.html">Blog Single</a></li>                
+              </ul>
+            </li>            
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="404.html">404 Page</a></li>               
+            <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
+          </ul>                     
+        </div><!--/.nav-collapse -->        
+      </div>     
+    </nav>
+  </section>
+  <!-- End menu -->
+  <!-- Start search box -->
+  <div id="mu-search">
+    <div class="mu-search-area">      
+      <button class="mu-search-close"><span class="fa fa-close"></span></button>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">            
+            <form class="mu-search-form">
+              <input type="search" placeholder="Type Your Keyword(s) &amp; Hit Enter" />              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End search box -->
+  <!-- Start Slider -->
+  <section id="mu-slider">
+    <!-- Start single slider item -->
+    <div class="mu-slider-single">
+      <div class="mu-slider-img">
+        <figure>
+          <img src="resources/assets/img/slider/OM-8.jpg" alt="img" />
+        </figure>
+      </div>
+      <div class="mu-slider-content">
+        <h4>Welcome To Petro Varsity</h4>
+        <span></span>
+        <h2>We Will Help You To Learn</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor amet error eius reiciendis eum sint unde eveniet deserunt est debitis corporis temporibus recusandae accusamus.</p>
+        <a href="#" class="mu-read-more-btn">Read More</a>  
+        <a href="#" class="mu-read-more-btn-1"><img src="resources/assets/img/register-now-button.png" width="170px"  alt="img" onclick="PF('register').show();"/></a>
+      </div>
+    </div>
+    <!-- Start single slider item -->
+    <!-- Start single slider item -->
+    <div class="mu-slider-single">
+      <div class="mu-slider-img">
+        <figure>
+          <img src="resources/assets/img/slider/OM-7.jpg" alt="img" />
+        </figure>
+      </div>
+      <div class="mu-slider-content">
+        <h4>Premiumu Quality Free Template</h4>
+        <span></span>
+        <h2>Best Education Template Ever</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor amet error eius reiciendis eum sint unde eveniet deserunt est debitis corporis temporibus recusandae accusamus.</p>
+        <a href="#" class="mu-read-more-btn">Read More</a>
+        <a href="#" class="mu-read-more-btn-1"><img src="resources/assets/img/register-now-button.png" width="170px"  alt="img" /></a>
+      </div>
+    </div>
+    <!-- Start single slider item -->
+    <!-- Start single slider item -->
+    <div class="mu-slider-single">
+      <div class="mu-slider-img">
+        <figure>
+          <img src="resources/assets/img/slider/OM-6.jpg" alt="img" />
+        </figure>
+      </div>
+      <div class="mu-slider-content">
+        <h4>Exclusivly For Education</h4>
+        <span></span>
+        <h2>Education For Everyone</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor amet error eius reiciendis eum sint unde eveniet deserunt est debitis corporis temporibus recusandae accusamus.</p>
+        <a href="#" class="mu-read-more-btn">Read More</a>
+        <a href="#" class="mu-read-more-btn-1"><img src="resources/assets/img/register-now-button.png" width="170px"  alt="img" /></a>
+      </div>
+    </div>
+    <!-- Start single slider item -->    
+  </section>
+  <!-- End Slider -->
+  <!-- Start service  -->
+  <section id="mu-service">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="mu-service-area">
+            <!-- Start single service -->
+            <div class="mu-service-single">
+              <span class="fa fa-book"></span>
+              <h3>Learn Online</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officiis, deleniti dolorem exercitationem praesentium, est!</p>
+            </div>
+            <!-- Start single service -->
+            <!-- Start single service -->
+            <div class="mu-service-single">
+              <span class="fa fa-users"></span>
+              <h3>Expert Teachers</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officiis, deleniti dolorem exercitationem praesentium, est!</p>
+            </div>
+            <!-- Start single service -->
+            <!-- Start single service -->
+            <div class="mu-service-single">
+              <span class="fa fa-table"></span>
+              <h3>Best Classrooms</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima officiis, deleniti dolorem exercitationem praesentium, est!</p>
+            </div>
+            <!-- Start single service -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End service  -->
+  
+  <ui:insert name="content" />
+  
+  <!-- Start footer -->
+  <footer id="mu-footer">
+    <!-- start footer top -->
+    <div class="mu-footer-top">
+      <div class="container">
+        <div class="mu-footer-top-area">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="mu-footer-widget">
+                <h4>Information</h4>
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="">Features</a></li>
+                  <li><a href="">Course</a></li>
+                  <li><a href="">Event</a></li>
+                  <li><a href="">Sitemap</a></li>
+                  <li><a href="">Term Of Use</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="mu-footer-widget">
+                <h4>Student Help</h4>
+                <ul>
+                  <li><a href="">Get Started</a></li>
+                  <li><a href="#">My Questions</a></li>
+                  <li><a href="">Download Files</a></li>
+                  <li><a href="">Latest Course</a></li>
+                  <li><a href="">Academic News</a></li>                  
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="mu-footer-widget">
+                <h4>News letter</h4>
+                <p>Get latest update, news &amp; academic offers</p>
+                <form class="mu-subscribe-form">
+                  <input type="email" placeholder="Type your Email" />
+                  <button class="mu-subscribe-btn" type="submit">Subscribe!</button>
+                </form>               
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="mu-footer-widget">
+                <h4>Contact</h4>
+                <address>
+                  <p>P.O. Box 320, Ross, California 9495, USA</p>
+                  <p>Phone: (415) 453-1568 </p>
+                  <p>Website: www.markups.io</p>
+                  <p>Email: info@markups.io</p>
+                </address>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end footer top -->
+    <!-- start footer bottom -->
+    <div class="mu-footer-bottom">
+      <div class="container">
+        <div class="mu-footer-bottom-area">
+          <p>&copy; All Right Reserved. Designed by <a href="http://www.markups.io/" rel="nofollow">MarkUps.io</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- end footer bottom -->
+  </footer>
+  
+          <p:dialog header="#{msg['label.register.form']}" widgetVar="register" showEffect="explode" modal="true"  height="100%" width="500">
+			<!-- form id="contact-form" method="post" action="contact.php" -->
+			<p:scrollPanel mode="native" style="height:550px">
+			<h:form id="registerForm">
+				<!-- p:growl id="growl" sticky="true" showDetail="true"/ -->
+
+
+				<div class="controls">
+
+					<div class="row">
+						<div class="col-md-6">
+							<h:outputText value="#{msg['label.firstName']}" />
+							<p:inputText value="#{contactUsController.bean.firstName}"
+								class="form-control" required="true"
+								label="#{msg['label.firstName']}" />
+						</div>
+
+						<div class="col-md-6">
+							<h:outputText value="#{msg['label.middleName']}" />
+							<p:inputText value="#{contactUsController.bean.middleName}"
+								class="form-control" required="true"
+								label="#{msg['label.middleName']}" />
+						</div>
+
+						<div class="col-md-6">
+							<h:outputText value="#{msg['label.lastName']}" />
+							<p:inputText value="#{contactUsController.bean.lastName}"
+								class="form-control" required="true"
+								label="#{msg['label.lastName']}" />
+						</div>
+
+						<div class="col-md-6">
+							<h:outputText value="#{msg['label.email']}" />
+							<p:inputText value="#{contactUsController.bean.email}"
+								class="form-control" required="true"
+								label="#{msg['label.email']}" />
+						</div>
+
+						<div class="col-md-6">
+							<h:outputText value="#{msg['label.originCountry']}" />
+							<p:inputText value="#{contactUsController.bean.originCountry}"
+								class="form-control" required="true"
+								label="#{msg['label.originCountry']}" />
+						</div>
+						
+						<div class="col-md-6">
+							<h:outputText value="#{msg['label.mobile']}" />
+							<p:inputText value="#{contactUsController.bean.mobile}"
+								class="form-control" required="true"
+								label="#{msg['label.mobile']}" />
+						</div>
+
+						<div class="col-md-6">
+							<h:outputText value="#{msg['label.alternativeNumber']}" />
+							<p:inputText value="#{contactUsController.bean.alternativeNumber}"
+								class="form-control" required="true"
+								label="#{msg['label.alternativeNumber']}" />
+						</div>
+
+						<div class="col-md-6">
+							<h:outputText value="#{msg['label.gender']}" />
+							<p:inputText value="#{contactUsController.bean.gender}"
+								class="form-control" required="true"
+								label="#{msg['label.gender']}" />
+						</div>
+							
+						<div class="col-md-6">
+							<h:outputText value="#{msg['label.dateOfBirth']}" />
+							<p:calendar value="#{contactUsController.bean.dateOfBirth}"
+								 required="true" navigator="true"
+								label="#{msg['label.dateOfBirth']}" />
+						</div>
+							
+						<div class="col-md-6">
+							<h:outputText value="#{msg['label.dateOfRegistration']}" />
+							<p:calendar value="#{contactUsController.bean.dateOfRegistration}"
+								 required="true" navigator="true"
+								label="#{msg['label.dateOfRegistration']}" />
+						</div>
+
+						<div class="col-md-6">
+							<h:outputText value="#{msg['label.passportNumber']}" />
+							<p:inputText value="#{contactUsController.bean.passportNumber}"
+								class="form-control" required="true"
+								label="#{msg['label.passportNumber']}" />
+						</div>
+
+						<div class="col-md-6">
+							<h:outputText value="#{msg['label.nationalId']}" />
+							<p:inputText value="#{contactUsController.bean.nationalId}"
+								class="form-control" required="true"
+								label="#{msg['label.nationalId']}" />
+						</div>
+
+						<div class="col-md-6">
+							<h:outputText value="#{msg['label.bloodGroup']}" />
+							<p:inputText value="#{contactUsController.bean.bloodGroup}"
+								class="form-control" required="true"
+								label="#{msg['label.bloodGroup']}" />
+						</div>
+
+						<div class="col-md-6">
+							<h:outputText value="#{msg['label.nationality']}" />
+							<p:inputText value="#{contactUsController.bean.nationality}"
+								class="form-control" required="true"
+								label="#{msg['label.nationality']}" />
+						</div>
+
+						<div class="col-md-6">
+							<h:outputText value="#{msg['label.religion']}" />
+							<p:inputText value="#{contactUsController.bean.religion}"
+								class="form-control" required="true"
+								label="#{msg['label.religion']}" />
+						</div>
+
+						<div class="col-md-6">
+							<h:outputText value="#{msg['label.addressLine1']}" />
+							<p:inputText value="#{contactUsController.bean.addressLine1}"
+								class="form-control" required="true"
+								label="#{msg['label.addressLine1']}" />
+						</div>
+
+						<div class="col-md-6">
+							<h:outputText value="#{msg['label.addressLine2']}" />
+							<p:inputText value="#{contactUsController.bean.addressLine2}"
+								class="form-control" required="true"
+								label="#{msg['label.addressLine2']}" />
+						</div>
+
+						<div class="col-md-6">
+							<h:outputText value="#{msg['label.addressLine3']}" />
+							<p:inputText value="#{contactUsController.bean.addressLine3}"
+								class="form-control" required="true"
+								label="#{msg['label.addressLine3']}" />
+						</div>
+
+						<div class="col-md-6">
+							<h:outputText value="#{msg['label.country']}" />
+							<p:inputText value="#{contactUsController.bean.country}"
+								class="form-control" required="true"
+								label="#{msg['label.country']}" />
+						</div>
+
+						<div class="col-md-6">
+							<h:outputText value="#{msg['label.state']}" />
+							<p:inputText value="#{contactUsController.bean.state}"
+								class="form-control" required="true"
+								label="#{msg['label.state']}" />
+						</div>
+
+						<div class="col-md-6">
+							<h:outputText value="#{msg['label.city']}" />
+							<p:inputText value="#{contactUsController.bean.city}"
+								class="form-control" required="true"
+								label="#{msg['label.city']}" />
+						</div>
+
+						<div class="col-md-6">
+							<h:outputText value="#{msg['label.zipCode']}" />
+							<p:inputText value="#{contactUsController.bean.zipCode}"
+								class="form-control" required="true"
+								label="#{msg['label.zipCode']}" />
+						</div>
+
+						<div class="col-md-6">
+							<h:outputText value="#{msg['label.registrationStatus']}" />
+							<p:inputText value="#{contactUsController.bean.registrationStatus}"
+								class="form-control" required="true"
+								label="#{msg['label.registrationStatus']}" />
+						</div>
+
+						<div class="col-md-6">
+							<h:outputText value="#{msg['label.eligibilityCheck']}" />
+							<p:inputText value="#{contactUsController.bean.eligibilityCheck}"
+								class="form-control" required="true"
+								label="#{msg['label.eligibilityCheck']}" />
+						</div>
+											
+						<div class="col-md-12 text-center">
+							<br />
+							<p:commandLink value="#{msg['label.register']}"
+								oncomplete="PF('register').hide();"
+								styleClass="btn  btn-lg btn-1" 
+								actionListener="#{contactUsController.sendEmail}" />
+						</div>
+					</div>
+				</div>
+
+			</h:form>
+			</p:scrollPanel>
+		</p:dialog>
+  
+  <!-- End footer -->
+    <!-- jQuery library -->
+    
+    <!-- Commenting this script alone, makes the dialogue box available  -->
+  <!-- <script src="resources/assets/js/jquery.min.js"></script> -->
+      
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="resources/assets/js/bootstrap.js"></script>   
+  <!-- Slick slider -->
+  <script type="text/javascript" src="resources/assets/js/slick.js"></script>
+  <!-- Counter -->
+  <script type="text/javascript" src="resources/assets/js/waypoints.js"></script>
+  <script type="text/javascript" src="resources/assets/js/jquery.counterup.js"></script>  
+
+  <!-- Custom js -->
+  <script src="resources/assets/js/custom.js"></script> 
+  <ui:insert name="footerScript" />
+  </h:body>
+</html>
